@@ -12,25 +12,30 @@ header {
   letter-spacing: 7px;
   font-size: 50px;
   text-align: center;
+  margin: 50px;
 }
 
 footer {
   color: white;
   text-align: center;
+  margin-top: 130px;
 }
 
 .weather-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.2fr 1.2fr;
   gap: 20px;
-  max-width: 70%;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  color: #4f4e4e;
 }
 .left-column {
-  display: grid;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  height: 500px;
 }
 .weather-block {
   background-color: white;
@@ -42,29 +47,87 @@ footer {
 .current-weather {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   text-align: center;
-  justify-content: center;
   padding: 20px;
+  gap: 12px;
+  height: 300px;
 }
 .search-city {
   display: flex;
   gap: 10px;
+  flex: 1;
+  max-height: 8%;
 }
-#current-city {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 8px;
+.current-city {
+  font-size: 40px;
+  font-weight: normal;
   letter-spacing: 1px;
+  margin: 0;
 }
 .specs {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.4;
   text-align: left;
 }
-#current-temp {
-  font-size: 34px;
+.current-temp {
+  font-size: 68px;
   font-weight: bold;
+}
+.today-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.today-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: left;
+}
+.today {
+  margin: 0;
+  font-size: 45px;
+  font-weight: bold;
+}
+.specs {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 28px;
+  line-height: 1.4;
+}
+.current-temp {
+  font-size: 68px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-left: 20px;
 }
 
 .weekly-forecast {
-  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1em;
+}
+.forecast-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 1.5em;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.forecast-row:last-child {
+  border-bottom: none;
 }

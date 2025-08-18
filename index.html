@@ -16,27 +16,35 @@
     <main class="weather-container">
       <div class="left-column">
         <form class="weather-block search-city">
-          <input id="search" type="search" placeholder="Search city..." />
-          <input id="submit" type="submit" value="Search" />
+          <input class="search" type="search" placeholder="Search city..." />
+          <input class="submit" type="submit" value="Search" />
         </form>
 
         <div class="weather-block current-weather">
-          <div id="current-city">Amsterdam</div>
-          <div class="specs">
-            Monday
-            <br />
-            Aug 18, 12:53
-            <br />
-            Humidity: 66%
-            <br />
-            Wind: 10 km/h
+          <div class="current-city">Amsterdam</div>
+          <div class="today-row">
+            <div class="today-details">
+              <h3 class="today">Monday</h3>
+              <p class="specs">
+                Aug 18, 12:53
+                <br />
+                Humidity: 66%
+                <br />
+                Wind: 10 km/h
+              </p>
+            </div>
+            <div class="current-temp">21°C</div>
           </div>
-          <div id="current-temp">21°C</div>
         </div>
       </div>
-      <p class="weather-block weekly-forecast">
-        day 1 day 2 day 3 day 4 day 5 day 6
-      </p>
+      <div class="weather-block weekly-forecast">
+        <div class="forecast-row"><span>Tuesday</span><span>24°</span></div>
+        <div class="forecast-row"><span>Wednesday</span><span>23°</span></div>
+        <div class="forecast-row"><span>Thursday</span> <span>19°</span></div>
+        <div class="forecast-row"><span>Friday</span> <span>18°</span></div>
+        <div class="forecast-row"><span>Saturday</span> <span>19°</span></div>
+        <div class="forecast-row"><span>Sunday</span> <span>19°</span></div>
+      </div>
     </main>
     <footer>
       This project was coded by
