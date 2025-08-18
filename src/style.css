@@ -137,6 +137,7 @@ footer {
   padding: 1em;
 }
 .forecast-row {
+  font-size: 23px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -148,26 +149,26 @@ footer {
 .forecast-row:last-child {
   border-bottom: none;
 }
-/* Responsive layout for tablets and smaller */
+
 @media (max-width: 900px) {
   .weather-container {
-    grid-template-columns: 1fr; /* stack columns */
+    grid-template-columns: 1fr;
     max-width: 95%;
   }
 
   .left-column {
-    height: auto; /* let content set its own height */
+    height: auto;
   }
 
   .current-weather,
   .search-city,
   .weekly-forecast {
-    height: auto; /* no fixed heights */
+    height: auto;
     min-height: unset;
   }
 
   .current-temp {
-    font-size: 48px; /* scale down big text so it fits */
+    font-size: 48px;
   }
 
   .today {
@@ -179,24 +180,23 @@ footer {
   }
 }
 
-/* Extra small phones */
 @media (max-width: 500px) {
   .today-row {
-    flex-direction: column; /* temp under the date/details */
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
   .forecast-row {
-    font-size: 20px; /* shrink forecast text */
+    font-size: 20px;
     padding: 0.5em 1em;
   }
 
   .search {
-    width: 100%; /* search field full width */
+    width: 100%;
   }
 
   .submit {
-    width: 100%; /* button full width below input if needed */
+    width: 100%;
   }
 }

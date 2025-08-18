@@ -15,13 +15,18 @@
     <header>Pohoda</header>
     <main class="weather-container">
       <div class="left-column">
-        <form class="weather-block search-city">
-          <input class="search" type="search" placeholder="Search city..." />
+        <form class="weather-block search-city" id="search-form">
+          <input
+            id="search-form-input"
+            class="search"
+            type="search"
+            placeholder="Search city..."
+          />
           <input class="submit" type="submit" value="Search" />
         </form>
 
         <div class="weather-block current-weather">
-          <div class="current-city">Amsterdam</div>
+          <div id="city" class="current-city">Amsterdam</div>
           <div class="today-row">
             <div class="today-details">
               <h3 class="today">Monday</h3>
