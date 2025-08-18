@@ -3,43 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
     <header>Pohoda</header>
-    <main>
-        <form>
-            <input type="search" placeholder="Search city..."/>
-            <input type="submit" value="Search"/>
+    <main class="weather-container">
+      <div class="left-column">
+        <form class="weather-block search-city">
+          <input id="search" type="search" placeholder="Search city..." />
+          <input id="submit" type="submit" value="Search" />
         </form>
-        <h1>
-            Amsterdam
-        </h1>
-        <p>
-            <div>
+
+        <div class="weather-block current-weather">
+          <div id="current-city">Amsterdam</div>
+          <div class="specs">
             Monday
-            <br/>
+            <br />
             Aug 18, 12:53
-            <br/>
+            <br />
             Humidity: 66%
-            <br/>
+            <br />
             Wind: 10 km/h
-            </div>
-            <div>
-                21°C
-            </div>
-        </p>
+          </div>
+          <div id="current-temp">21°C</div>
+        </div>
+      </div>
+      <p class="weather-block weekly-forecast">
+        day 1 day 2 day 3 day 4 day 5 day 6
+      </p>
     </main>
     <footer>
       This project was coded by
-      <a
-        href="https://github.com/mari-cg"
-        target="_blank"
-        >Marilène Stomp</a
-      >
+      <a href="https://github.com/mari-cg" target="_blank">Marilène Stomp</a>
       and is on
-      <a href="https://github.com/mari-cg/pohoda-app" target="_blank"> Github</a> and
-      hosted on
+      <a href="https://github.com/mari-cg/pohoda-app" target="_blank">
+        Github</a
+      >
+      and hosted on
       <a href="https://pohodaweather.netlify.app/" target="_blank">Netlify</a>
     </footer>
   </body>

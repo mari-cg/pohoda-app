@@ -1,0 +1,70 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/410/original/1442345.jpg?1755516120");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e9d2b9;
+  font-family: "Nunito", sans-serif;
+}
+header {
+  color: white;
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: 7px;
+  font-size: 50px;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.left-column {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+.weather-block {
+  background-color: white;
+  opacity: 0.65;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+.search-city {
+  display: flex;
+  gap: 10px;
+}
+#current-city {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.specs {
+  text-align: left;
+}
+#current-temp {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.weekly-forecast {
+  grid-column: 3;
+}
