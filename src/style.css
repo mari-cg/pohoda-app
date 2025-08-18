@@ -59,6 +59,20 @@ footer {
   gap: 10px;
   flex: 1;
   max-height: 8%;
+  font-weight: bold;
+}
+.search {
+  border: none;
+  width: 80%;
+  text-align: center;
+}
+.submit {
+  color: #4f4e4e;
+  border-radius: 20px;
+  border-color: #b1b1b1;
+}
+.submit:hover {
+  cursor: pointer;
 }
 .current-city {
   font-size: 40px;
