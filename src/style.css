@@ -30,7 +30,6 @@ footer {
   max-height: 1000px;
   margin: 0 auto;
   color: #4f4e4e;
-  box-;
 }
 .left-column {
   display: flex;
@@ -43,7 +42,7 @@ footer {
   opacity: 0.65;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .current-weather {
   display: flex;
