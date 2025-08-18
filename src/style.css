@@ -148,3 +148,55 @@ footer {
 .forecast-row:last-child {
   border-bottom: none;
 }
+/* Responsive layout for tablets and smaller */
+@media (max-width: 900px) {
+  .weather-container {
+    grid-template-columns: 1fr; /* stack columns */
+    max-width: 95%;
+  }
+
+  .left-column {
+    height: auto; /* let content set its own height */
+  }
+
+  .current-weather,
+  .search-city,
+  .weekly-forecast {
+    height: auto; /* no fixed heights */
+    min-height: unset;
+  }
+
+  .current-temp {
+    font-size: 48px; /* scale down big text so it fits */
+  }
+
+  .today {
+    font-size: 32px;
+  }
+
+  .specs {
+    font-size: 20px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 500px) {
+  .today-row {
+    flex-direction: column; /* temp under the date/details */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .forecast-row {
+    font-size: 20px; /* shrink forecast text */
+    padding: 0.5em 1em;
+  }
+
+  .search {
+    width: 100%; /* search field full width */
+  }
+
+  .submit {
+    width: 100%; /* button full width below input if needed */
+  }
+}
