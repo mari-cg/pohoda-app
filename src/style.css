@@ -62,14 +62,17 @@ footer {
   font-weight: bold;
 }
 .search {
+  font-size: 18px;
   border: none;
-  width: 80%;
+  width: 73%;
   text-align: center;
 }
 .submit {
   color: #4f4e4e;
   border-radius: 20px;
-  border-color: #b1b1b1;
+  border-color: 0.2px solid #b1b1b1;
+  font-size: 13px;
+  padding: 10px 20px;
 }
 .submit:hover {
   cursor: pointer;
