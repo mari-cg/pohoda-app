@@ -1,6 +1,6 @@
 function refreshWeather(response) {
   let tempValue = document.querySelector(".temp-value");
-  let temperature = response.data.temperature.current;
+  //let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
@@ -13,6 +13,7 @@ function refreshWeather(response) {
   let capitalizedDescriptionElement =
     rawDescriptionElement.charAt(0).toUpperCase() +
     rawDescriptionElement.slice(1);
+  console.log(response.data);
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = `${month} ${dates}, ${hours}:${minutes}`;
@@ -20,7 +21,8 @@ function refreshWeather(response) {
   descriptionElement.innerHTML = capitalizedDescriptionElement;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-  tempValue.innerHTML = Math.round(temperature);
+  //document.querySelector(".temp-value").innerHTML = 25;
+  tempValue.innerHTML = Math.round(response.data.temperature.current);
 }
 
 function formatDate(date) {

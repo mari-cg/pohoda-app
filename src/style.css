@@ -52,7 +52,8 @@ footer {
   text-align: center;
   padding: 20px;
   gap: 12px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
 }
 .search-city {
   display: flex;
@@ -92,12 +93,16 @@ footer {
 .current-temp {
   font-size: 68px;
   font-weight: bold;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 .today-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .today-details {
@@ -105,6 +110,7 @@ footer {
   flex-direction: column;
   margin-top: 20px;
   text-align: left;
+  flex-shrink: 1;
 }
 .today {
   margin: 0;
@@ -118,12 +124,21 @@ footer {
   line-height: 1.4;
 }
 .current-temp {
-  font-size: 68px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 80px;
   font-weight: bold;
-  flex-shrink: 0;
   margin-left: 20px;
+  line-height: 1;
 }
-
+.current-temp .temp-unit {
+  font-size: 0.4em;
+  align-self: flex-start;
+}
+.current-temp .temp-value {
+  font-size: 1em;
+}
 .weekly-forecast {
   display: flex;
   flex-direction: column;
@@ -185,6 +200,8 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .forecast-row {
