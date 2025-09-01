@@ -13,8 +13,9 @@ function refreshWeather(response) {
   let capitalizedDescriptionElement =
     rawDescriptionElement.charAt(0).toUpperCase() +
     rawDescriptionElement.slice(1);
-  console.log(response.data);
+  let iconElement = document.querySelector("#icon");
 
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = `${month} ${dates}, ${hours}:${minutes}`;
   todayElement.innerHTML = day;
