@@ -75,6 +75,32 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = [`Tue`, `Wed`, `Thu`, `Fri`, `Sat`, `Sun`];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-row">
+          <span class="weather-forecast-date">${day}</span>
+          <span class="forecast-right">
+            <span class="weather-forecast-icon">🌧️</span>
+            <span class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature">
+                <strong>22°</strong>
+              </span>
+              /
+              <span class="weather-forecast-temperature">15°</span>
+            </span>
+          </span>
+        </div>
+`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Amsterdam");
+displayForecast();
