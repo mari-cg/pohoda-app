@@ -162,13 +162,17 @@ footer {
   box-sizing: border-box;
 }
 
-.weather-forecast-date .weather-forecast-temperatures {
+.weather-forecast-date {
   font-size: 23px;
 }
 .weather-forecast-icon {
-  width: 12px;
+  width: 48px;
   height: auto;
 }
+.weather-forecast-temperatures {
+  font-size: 23px;
+}
+
 .forecast-row:last-child {
   border-bottom: none;
 }
